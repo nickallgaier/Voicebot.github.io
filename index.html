@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lufthansa Caller Authentication</title>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <style>
       html {
@@ -12,16 +12,15 @@
 
   <body>
     <!-- 1. Load the webchat.js bundle via a script tag -->
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.40.6/webchat.js"></script>
+    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v2.20.0/webchat.js"></script>
 
     <!-- Initialize the Webchat towards a Cogngiy Endpoint via initWebchat() -->
     <script>
       initWebchat(
         "https://endpoint-trial.cognigy.ai/8a8b023c1da283e1c9191c471aaef8dc5090ccc8f33d6a39b00a80276754309e",
         {
-          settings: {
-            designTemplate: "2"
-          }
+          userId: "sessionId",
+          forceWebsockets: true
         }
       );
     </script>
